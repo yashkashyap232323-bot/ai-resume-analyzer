@@ -11,7 +11,7 @@ const loadingMsgs = [
   "Final report ready ho rahi hai..."
 ];
 
-let API_KEY = "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";
+let API_KEY = "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";
 
 function handleFile(e) {
   const file = e.target.files[0];
@@ -98,7 +98,7 @@ Return this exact JSON structure:
         "X-Title": "AI Resume Analyzer"
       },
       body: JSON.stringify({
-        model: "meta-llama/llama-3.2-3b-instruct:free",
+        model: "google/gemma-3-4b-it:free",
         messages: [{ role: "user", content: prompt }],
         temperature: 0.3,
         max_tokens: 1500
